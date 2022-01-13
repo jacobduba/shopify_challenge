@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Edit inventory item</title>	
+	</head>
+	<body>
+		<form action="/edit/<%= id %>" method="post">
+			<label for="name">Change name:</label>
+			<input id="name" type="text" name="name_field" required="required" placeholder="New inventory item name">
+			<input type="submit" value="OK">
+		</form>
+	</body>
+</html>

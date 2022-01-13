@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Inventory Tracking</title>	
+	</head>
+	<body>
+		<h1>Inventory</h1>
+		<form action="/create_new" method="post">
+			<label for="name">Enter name:</label>
+			<input id="name" type="text" name="name_field" required="required" placeholder="New inventory item">
+			<input type="submit" value="OK">
+		</form>
+		<ul>
+			<% items.forEach((item) => { %>
+			<li > <%= item.title %> — <a href="/edit/<%= item.id %>">edit</a> <a href="/delete/<%= item.id %>">delete</a></li>
+			<% }) %>
+		</ul>
+		<a href="/csv"><button>Download CSV</button></a>
+	</body>
+</html>
