@@ -18,3 +18,19 @@ ONE OF THE FOLLOWING (We will only evaluate the first feature chosen, so please 
 * Ability to create warehouses/locations and assign inventory to specific locations
 * Ability to create “shipments” and assign inventory to the shipment, and adjust inventory appropriately
 * Ability to generate a report on inventory levels over time, like: most in-stock or out-of-stock last month
+
+https://user-images.githubusercontent.com/11655457/149258709-6c97e5f8-4c27-4ed5-b6ff-b458a6a7bf89.mp4
+
+## Installing
+This has only been tested on unix systems, for Windows I reccomend developing with WSL.
+
+Make sure you these programs installed prior:
+* Node.js v16
+* NPM v8
+
+Seting up
+```
+git clone https://github.com/mooshoe/shopify_challenge && cd shopify-challenge
+npm install
+node index.js
+```
